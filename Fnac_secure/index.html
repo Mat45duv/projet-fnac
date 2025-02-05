@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fnac.png" type="image/png">
+    <title>Fnac front</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Fnac: recherche dans le catalogue</h1>
+    <form method="post" action="traitement.php">
+        <label for="choix">Choisissez un type de recherche: </label>
+        <select name="choix" id="choix" required>
+            <option value="Titre">Titre</option>
+            <option value="Auteur">Auteur</option>
+            <option value="ISBN">ISBN</option>
+        </select><br>
+        <label for="carac">Entrez une chaîne de caractère pour la recherche:</label>
+        <input type="text" name="carac" required><br>
+        <input type="submit" value="Confirmer"><br>
+        <input type="reset" value="annulez"/>
+    </form>
+</div>
+</body>
